@@ -1,0 +1,39 @@
+NAME   = glfw
+
+CFLAGS = \
+    -Ivendor/include \
+    -D_GLFW_X11 \
+    -fvisibility=default
+
+LIBS = \
+    x11 \
+    xrandr \
+    xi \
+    xcursor \
+    xinerama \
+    xxf86vm \
+    gl
+
+SUPPRESS_WARNINGS = \
+    missing-field-initializers \
+    sign-compare \
+    unused-parameter \
+    pedantic
+
+SRCS_ROOT = vendor/src/
+
+SRCS = \
+    context.c \
+    init.c \
+    input.c \
+    monitor.c \
+    vulkan.c \
+    window.c \
+    x11_init.c \
+    x11_monitor.c \
+    x11_window.c \
+    xkb_unicode.c \
+    posix_time.c \
+    posix_thread.c \
+    posix_module.c \
+    glx_context.c

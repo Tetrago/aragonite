@@ -1,0 +1,10 @@
+NAME = window
+
+EXTERNAL_DEPS = glfw
+
+CXXFLAGS = \
+    -I../../external/glfw/vendor/include \
+    -Iinclude \
+    -Isrc
+
+SRCS = src/window.cpp

@@ -1,0 +1,1 @@
+../../tools/MakeLibrary.mk
